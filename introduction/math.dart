@@ -10,4 +10,12 @@ void main() {
   /// Obtener un valor aleatorio entre el 1 y el 10
   int numeroRandom2 = random.nextInt(10) + 1;
   print("Número aleatorio generado: $numeroRandom2");
+
+  /// Obtener un valor boleano aleatorio
+  double randomDouble = random.nextDouble();
+  print("Número aleatorio double: $randomDouble");
+
+  /// Obtener un valor boleano aleatorio
+  bool randomBool = random.nextBool();
+  print("Número aleatorio booleano: $randomBool");
 }
