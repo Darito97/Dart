@@ -40,4 +40,11 @@ void main() {
   Set<int> numeros2 = {1, 2, 4};
   var diferencia = numeros1.difference(numeros2);
   print(diferencia);
+
+  // Elemento especifico de una posición
+  print(numeros1.elementAt(1));
+
+  // Intersección de dos sets
+  var interseccion = numeros1.intersection(numeros2);
+  print(interseccion);
 }
