@@ -27,4 +27,12 @@ void main() {
 
   /// Longitud del mapa
   print(capitales.length);
+
+  /// Agregar un nuevo elemento al mapa
+  capitales["España"] = "Madrid";
+  print(capitales);
+
+  /// Actualizar un valor en un mapa
+  capitales["Mexico"] = "CDMX";
+  print(capitales);
 }
