@@ -35,4 +35,29 @@ void main() {
   /// Actualizar un valor en un mapa
   capitales["Mexico"] = "CDMX";
   print(capitales);
+
+  /// Metodos de un mapa en dart
+
+  /// Convertir llaves y valores en una lista
+  print(capitales.keys.toList());
+  print(capitales.values.toList());
+
+  /// Verificar si una key o valor existe en un mapa
+  print(capitales.containsKey("Mexico"));
+  print(capitales.containsValue("CDMX"));
+
+  /// Remover elementos de un map
+  capitales.remove("China");
+  print(capitales);
+
+  /// loop de elementos en un mapa
+  for (MapEntry pais in capitales.entries) {
+    print("Pais: ${pais.key}, Capital: ${pais.value}");
+  }
+
+  /// loop de map usando un forEach
+  capitales.forEach((key, value) => print("Pais: $key, Capital: $value"));
+
+  /// RemoveWhere en dart
+  capitales.removeWhere((key, value) => key == "India");
 }
