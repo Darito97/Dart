@@ -20,4 +20,19 @@ void main() {
 
   /// Obtener ultima modificación
   print("Ultima modificación: ${file.lastModifiedSync()}");
+
+  /// Leer un archivo CSV
+  File fileCSV = new File("test.csv");
+  String contenidoCSV = fileCSV.readAsStringSync();
+  List<String> lineas = contenidoCSV.split("\n");
+
+  print("---------------------------");
+  for (String linea in lineas) {
+    print(linea);
+  }
+
+  /// Leer solo una parte del archivo
+  File archivo = new File("file.txt");
+  String contenidoArchivo = archivo.readAsStringSync().substring(0, 3);
+  print(contenidoArchivo);
 }
